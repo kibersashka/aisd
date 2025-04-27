@@ -14,7 +14,7 @@ public class Staсk<T> implements StaсkImpl<T> {
         }
     }
     private Node head;
-    private int size;
+    private int size = 0;
 
 
     public Staсk(){
@@ -43,28 +43,11 @@ public class Staсk<T> implements StaсkImpl<T> {
         size++;
     }
 
+
+
+
+
     @Override
-    public void add(T x, int i) throws IndexOutOfBoundsException {
-        if(i > size() - 1 || i < 0 ){
-            throw new IndexOutOfBoundsException();
-        }
-        Node current = head;
-
-        Node newN = new Node();
-        int count = 1;
-        while (count != i){
-            current = current.next;
-            ++count;
-        }
-        newN.values = x;
-        newN.next = current.next;
-        current.next = newN;
-        size++;
-    }
-
-
-
-
     public void remove()  {
         Node last = head;
         if (last.next == null){
@@ -86,27 +69,13 @@ public class Staсk<T> implements StaсkImpl<T> {
     @Override
     public void clear() {
         head.next = null;
+        size = 0;
     }
 
     @Override
     public int size() {
         return size;
     }
-    //по индексу
-    @Override
-    public T get(int i) throws IndexOutOfBoundsException {
-        if(i > size() - 1 || i < 0 ){
-            throw new IndexOutOfBoundsException();
-        }
-        Node current = head.next;
-        int count = 0;
-        while (count != i - 1 & current.next != null){
-            current = current.next;
-            ++count;
-        }
-        return (T)(current.values);
-    }
-
 
 
     @Override

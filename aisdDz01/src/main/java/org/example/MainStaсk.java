@@ -50,7 +50,7 @@ public class MainStaсk {
 
     }
     public static boolean chek(Character ch1, char ch2){
-        if (ch1 != null && (ch1 + ch2 == '(' + ')' || ch1 + ch2 == '{' + '}' || ch1 + ch2 == '[' + ']')){
+        if (ch1 != null && (ch1 - ch2 == '(' - ')' || ch1 - ch2 == '{' - '}' || ch1 - ch2 == '[' - ']')){
             return true;
         }
 
@@ -71,8 +71,9 @@ public class MainStaсk {
                     stek.add(step);
                 }
             }
-            stek.clear();
             System.out.println(stek.size() == 0);
+            stek.clear();
+
         }
     }
 }

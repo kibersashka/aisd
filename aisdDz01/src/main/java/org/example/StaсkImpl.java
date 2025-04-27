@@ -1,39 +1,31 @@
 package org.example;
-//<T> - переменная типа данных
-public interface StaсkImpl<T> {    /**
- * метод добавляет элемент в список *в конец*
- *
- */
-void add(T x);
+
+public interface StaсkImpl<T> {
     /**
-     * метод добавляет элемент в позицию i
+     *
      */
-    void add(T x, int i) throws IndexOutOfBoundsException;
+    void add(T x);
+
     /**
-     *
-     *
-     * удаление оп индексу i и возвращение удаленного элемента
+     * удаление
      */
     void remove();
+
+    /**
+     * получение элемента
+     * @return
+     */
     T get();
     /**
-     * длина списка
+     * удаление всех
      */
     void clear();
 
+    /**
+     * размер
+     * @return
+     */
     int size();
-    /**
-     * обращение по индексу
-     * Integer --->>> null
-     */
-    T get(int i) throws IndexOutOfBoundsException;
-
-    /**
-     *
-     * sortirovka
-     * acs - направление сортировки
-     * true - возрастание
-     */
 
 
 }
