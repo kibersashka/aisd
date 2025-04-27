@@ -85,7 +85,7 @@ public class Stek<T> implements StekImpl<T> {
 
     @Override
     public void clear() {
-        head = null;
+        head.next = null;
     }
 
     @Override

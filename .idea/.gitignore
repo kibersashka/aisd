@@ -5,3 +5,9 @@ aisdDz01/pom.xml
 aisdDz01.iml
 .idea
 .idea/.gitignore
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/jarRepositories.xml
+aisdDz01/target
+.idea/modules.xml
+.idea/misc.xml

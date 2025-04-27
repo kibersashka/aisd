@@ -71,6 +71,7 @@ public class MainStek {
                     stek.add(step);
                 }
             }
+            stek.clear();
             System.out.println(stek.size() == 0);
         }
     }
