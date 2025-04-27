@@ -2,7 +2,7 @@ package org.example;
 
 
 
-public class Stek<T> implements StekImpl<T> {
+public class Steсk<T> implements SteсkImpl<T> {
     class Node{
         T values;
         Node next;
@@ -17,7 +17,7 @@ public class Stek<T> implements StekImpl<T> {
     private int size;
 
 
-    public Stek(){
+    public Steсk(){
         this.head = new Node();
     }
 

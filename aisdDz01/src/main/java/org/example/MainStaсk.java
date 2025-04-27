@@ -2,11 +2,11 @@ package org.example;
 
 
 
-public class MainStek {
-    StekImpl<Character> stek = new Stek<>();
+public class MainSteсk {
+    SteсkImpl<Character> stek = new Steсk<>();
     public static void main(String[] args) {
 
-        StekImpl<Character> stek = new Stek<>();
+        SteсkImpl<Character> stek = new Steсk<>();
         String str = "()()((()))";
         //stek.add(str.charAt(0));
         String[] validCases = {
@@ -56,7 +56,7 @@ public class MainStek {
 
         return false;
     }
-    public static void getCheking(String[] arr, StekImpl<Character> stek){
+    public static void getCheking(String[] arr, SteсkImpl<Character> stek){
         for(int j = 0; j < arr.length; j++) {
             if (arr[j].length() == 0){
                 System.out.println(true);

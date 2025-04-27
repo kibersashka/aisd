@@ -1,6 +1,6 @@
 package org.example;
 //<T> - переменная типа данных
-public interface StekImpl<T> {    /**
+public interface SteсkImpl<T> {    /**
  * метод добавляет элемент в список *в конец*
  *
  */
