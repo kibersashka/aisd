@@ -3,3 +3,5 @@
 /workspace.xml
 aisdDz01/pom.xml
 aisdDz01.iml
+.idea
+.idea/.gitignore
