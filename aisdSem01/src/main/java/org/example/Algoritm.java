@@ -46,20 +46,26 @@ public class Algoritm {
             current = next;
         } while (!current.equals(start));//алгоритм завершается когда дойдем до стартовой
         long endTime = System.nanoTime();
-        System.out.println("колличество операций: " + n);
-        System.out.println("размер входных данных: " + points.size());
+
+        //System.out.println("колличество операций: " + n);
+        //System.out.println("размер входных данных: " + points.size());
+
+        addInTheResFile(n, points, endTime, startTime);
+
+        return algoritm;
+    }
+
+    public static void addInTheResFile(long n, List<Point> points, long endTime, long startTime){
         try (FileWriter os = new FileWriter("res.txt", true)){
             os.write(n + " " + points.size() + " " + (endTime - startTime) + "\n");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        return algoritm;
     }
     //проверка расположения
     //ab * bc < 0 справа
     //ab * bc > 0 слева
     //ab * bc = 0 лежит
-
     public static int getPlace(Point a, Point b, Point c) {
         return ((b.getX() - a.getX()) * (c.getY() - b.getY()) - (b.getY() - a.getY()) * (c.getX() - b.getX()));
     }
