@@ -73,7 +73,6 @@ public class MainStaсk {
             }
             System.out.println(stek.size() == 0);
             stek.clear();
-
         }
     }
 }
