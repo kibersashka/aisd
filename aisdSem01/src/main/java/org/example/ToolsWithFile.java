@@ -8,7 +8,7 @@ public class ToolsWithFile {
     public static void generateFile(String nameOfFile, int lenOfOutDate, int randeOfCoor) {
         try (BufferedWriter fw = new BufferedWriter(new FileWriter(nameOfFile))){
             for (int i = 0; i < lenOfOutDate; i++){
-                fw.write((int) ((Math.random() * randeOfCoor * 2) -randeOfCoor) + " " + (int) ((Math.random() * randeOfCoor * 2)-randeOfCoor) + "\n" );
+                fw.write((int) ((Math.random() * randeOfCoor * 2) - randeOfCoor) + " " + (int) ((Math.random() * randeOfCoor * 2) - randeOfCoor) + "\n" );
             }
         } catch (IOException e) {
             throw new RuntimeException(e);

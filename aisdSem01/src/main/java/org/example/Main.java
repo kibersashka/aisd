@@ -15,7 +15,7 @@ public class Main {
 
         for (int i = 1; i <= 50; i++) {
 
-            ToolsWithFile.generateFile("coord" + i + ".txt", i * 100, i * 100);
+            ToolsWithFile.generateFile("coord" + i + ".txt", i * 100, 50);
             ToolsWithFile.readFile("coord" + i + ".txt", points);
 
 
