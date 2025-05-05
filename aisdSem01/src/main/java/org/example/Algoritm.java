@@ -54,7 +54,7 @@ public class Algoritm {
 
         return algoritm;
     }
-
+//запись в файл для таблицы
     public static void addInTheResFile(long n, List<Point> points, long endTime, long startTime){
         try (FileWriter os = new FileWriter("res.txt", true)){
             os.write(n + " " + points.size() + " " + (endTime - startTime) + "\n");
