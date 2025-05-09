@@ -15,8 +15,8 @@ public class Main {
 
         for (int i = 1; i <= 50; i++) {
 
-            ToolsWithFile.generateFile("coord" + i + ".txt", i * 100, 50);
-            ToolsWithFile.readFile("coord" + i + ".txt", points);
+            ToolsWithFile.generateFile("file/coord" + i + ".txt", i * 100, 50);
+            ToolsWithFile.readFile("file/coord" + i + ".txt", points);
 
 
             long start = System.nanoTime();
@@ -31,7 +31,7 @@ public class Main {
             }
 
 
-            //System.out.println("Нашли выпуклую оболочку за : " + (end - start));
+            System.out.println("Нашли выпуклую оболочку за : " + (end - start));
         }
 
     }
