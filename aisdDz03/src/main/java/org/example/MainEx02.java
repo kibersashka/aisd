@@ -41,7 +41,7 @@ public class MainEx02 {
         String left = ex02(node.left);
         String right = ex02(node.right);
 
-        return node + " " + left + " " + right;
+        return "(" + node + ", " + left + ", " + right + ")";
     }
 }
 
