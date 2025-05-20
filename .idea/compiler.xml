@@ -6,7 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="aisdClassWork17.05" />
         <module name="aisdClassWork03" />
+        <module name="aisdCW16.05" />
+        <module name="aisdDz04" />
         <module name="aisdDz03" />
         <module name="aisdClassWork02.05.2025" />
         <module name="aisdDz02" />
