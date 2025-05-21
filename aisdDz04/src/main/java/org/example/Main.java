@@ -8,7 +8,7 @@ import static org.example.MergeSortString.mergeSort;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = new int[]{8, 7, 6, 5, 4, 17, 18, 19, 20, 21, 22, 23};
+        int[] arr = new int[]{10, 9, 7,6, 5,1000,72,73};
         System.out.println(ex01(arr));
         String str = "this is ib";
         System.out.println(ex02(str));
@@ -29,27 +29,18 @@ public class Main {
     public static int ex01(int[] arr){
 
         int mid = (arr.length) / 2;
-        int l = mid - 1 ;
-        int r = mid + 1;
-        while(l <= r){
-
-            if (arr[l] > arr[mid] && arr[mid] > arr[r]){
-                l++;
-                mid++;
-                r++;
-                continue;
-            }
-            if (arr[mid] > arr[l] && arr[mid] < arr[r]){
-                l--;
-                r--;
-                mid--;
-            }
-            if (arr[l] > arr[mid] && arr[r] > arr[mid]){
-                return mid;
-
+        System.out.println(arr[mid]);
+        int l = 0 ;
+        int r = arr.length - 1;
+        while(l < r){
+            mid = (l + r) / 2;
+            if(arr[mid] > arr[mid + 1] ){
+                l = mid + 1;
+            }else{
+                r = mid;
             }
         }
-        return -10;
+        return mid;
     }
     /**
      * Задача 2.
