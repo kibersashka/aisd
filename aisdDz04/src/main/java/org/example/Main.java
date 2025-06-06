@@ -51,7 +51,6 @@ public class Main {
      */
     public static String ex02(String str){
         String res = "";
-
         String stepL = "";
         for(int l = 0; l < str.length(); l++){
             if(str.charAt(l) != ' '){
@@ -59,7 +58,7 @@ public class Main {
             }
 
             if(str.charAt(l) == ' ' || l == str.length() - 1){
-                stepL +=  " ";
+                stepL += " ";
                 res = stepL + res;
                 stepL = "";
             }
@@ -93,7 +92,6 @@ public class Main {
      * Пример: [15, 5, 11, 10, 12], s = 30, тогда ответ будет 3 (например, 5 + 10 + 11 < 30)
      */
     public static int ex04(List<Integer> arr){
-
         int s = 30;
         mergeSortInteger(arr);
         int i = 0;
