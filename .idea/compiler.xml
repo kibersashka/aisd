@@ -7,19 +7,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="aisdClassWork24.05" />
-        <module name="aisdClassWork31.05" />
         <module name="aisdClassWork17.05" />
         <module name="aisdClassWork03" />
+        <module name="aisdDz07" />
         <module name="aisdDz06" />
-        <module name="aisdCW16.05" />
         <module name="aisdDz04" />
         <module name="aisdDz03" />
         <module name="aisdClassWork02.05.2025" />
         <module name="aisdDz02" />
         <module name="aisdDz01" />
+        <module name="aisdClassWork31.05" />
+        <module name="aisd0801" />
+        <module name="aisdCW16.05" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="aisdDz08" target="24" />
       <module name="aisdSemestrovayaRabota#1" target="24" />
     </bytecodeTargetLevel>
   </component>
