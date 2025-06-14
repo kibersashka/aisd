@@ -22,9 +22,17 @@ public class Main {
         moves.add(Arrays.asList(1, 2, 3));
         moves.add(Arrays.asList(1, 2));
         ex02(moves);
+        /*
+                0   1   2   3    4    5   6   7   8   9   10
+                                                true  true       true
+
+
+ */
     }
     /* 1  2  3  4  5  6  7
        LL             LR RR
+       LL LR             RR
+       LL LR RR
    1 + 6 + 7 < T
    yes
    LL -->>> + 1
@@ -105,7 +113,7 @@ public class Main {
         for(int i = 1; i <= n; i++){
             boolean win = false;//ну типа если не выполнится условие дальше которрые будут они определяют выиграшуную позицию
             for(Integer step: list.get(i - 1)){
-                if(i - step >= 0 && !w[i - step]){
+                if(i - step >= 0 || w[i - step]){
                     win = true;
                 }
             }
